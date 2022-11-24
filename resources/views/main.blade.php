@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title') - MyBimbel</title>
+    <title>@yield('title') - MyBimbel by YukCoding</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -40,7 +40,7 @@
                         <a href="{{ url('home') }}"> <i class="menu-icon fa fa-dashboard"></i>Home </a>
                     </li>
                     <li>
-                        <a href="{{ url('edulevels') }}"> <i class="menu-icon fa fa-puzzle-piece"></i>EduLevel </a>
+                        <a href="{{ url('edulevels') }}"> <i class="menu-icon fa fa-puzzle-piece"></i>Edu Level </a>
                     </li>
                     <li>
                         <a href="{{ url('programs') }}"> <i class="menu-icon fa fa-puzzle-piece"></i>Program </a>

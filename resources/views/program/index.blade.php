@@ -54,8 +54,8 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>EduLevel</th>
                             <th>Nama Program</th>
+                            <th>Edu Level</th>
                             <th></th>
                         </tr>
                     </thead>

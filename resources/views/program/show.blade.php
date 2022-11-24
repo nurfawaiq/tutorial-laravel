@@ -64,7 +64,7 @@
                                 </tr>
                                 <tr>
                                     <th>Student Price</th>
-                                    <td>{{ $program->student_price }}</td>
+                                    <td>Rp {{ number_format($program->student_price, 0, ',', '.') }}</td>
                                 </tr>
                                 <tr>
                                     <th>Student Max</th>
@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr>
                                     <th>Created at</th>
-                                    <td>{{ $program->created_at }}</td>
+                                    <td>{{ date('d/m/Y H:i:s', strtotime($program->created_at)) }}</td>
                                 </tr>
                             </tbody>
                         </table>
