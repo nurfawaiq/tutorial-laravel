@@ -60,7 +60,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($programs as $key => $item)
+                        @forelse ($programs as $key => $item)
                             <tr>
                                 <td>{{ $programs->firstItem() + $key }}</td>
                                 <td>{{ $item->edulevel->name }}</td>
@@ -81,14 +81,18 @@
                                     </form>
                                 </td>
                             </tr>
-                        @endforeach
+                        @empty
+                            <tr>
+                                <td colspan="4" class="text-center">Data kosong</td>
+                            </tr>
+                        @endforelse
                     </tbody>
                 </table>
                 <div class="pull-left">
                     Showing
-                    {{ $programs->firstItem() }}
+                    {{ $programs->firstItem() ?? 0 }}
                     to
-                    {{ $programs->lastItem() }}
+                    {{ $programs->lastItem() ?? 0 }}
                     of
                     {{ $programs->total() }}
                     entries
